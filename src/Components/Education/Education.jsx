@@ -15,14 +15,14 @@ const Education = () => {
         {Services_Data.map((service, index) => {
           return (
             <div key={index} className="services-formate">
-              {/* <h3>{service.s_no}</h3> */}
-              <h2>{service.s_name}</h2>
+              <h2>{service.school}</h2>
+              <h3>{service.s_name}</h3>
               {/* <p>{service.s_desc}</p> */}
               <p>{service.s_grade}</p>
-              <div className="services-readmore">
+              {/* <div className="services-readmore">
                 <p>Read More</p>
                 <img src={arrow_icon} alt="" />
-              </div>
+              </div> */}
             </div>
           );
         })}
